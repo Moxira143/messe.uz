@@ -1,45 +1,44 @@
-/* Стили для простого горизонтального меню */
-.navbar-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-item {
-    list-style: none;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: #007bff;
-    padding: 10px 15px;
-    display: block; /* Чтобы ссылки стали кликабельными */
-}
-
-.nav-link:hover {
-    color: #0056b3;
-    text-decoration: underline; /* Подчёркивание при наведении */
-}
-
-/* Дополнительные стили */
 body {
     font-family: Arial, sans-serif;
 }
 
+h1, h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
 section {
+    padding: 20px 0;
+}
+
+#home {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#about, #koelnmesse, #exhibitions, #contacts {
+    background-color: #f1f1f1;
+    border-radius: 8px;
     padding: 20px;
-    margin-top: 20px;
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 1rem;
-    color: #555;
+#contacts a {
+    margin-right: 15px;
 }
