@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой Сайт</title>
-    <!-- Подключаем Bootstrap CSS для стилей -->
+    <!-- Подключаем Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Подключение кастомного стиля (если нужно) -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Подключение стилей -->
 </head>
 <body>
 
     <!-- Навигационное меню -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Мой Сайт</a>
+        <!-- Для мобильных устройств и других малых экранов кнопка для меню -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Это меню будет открываться/закрываться на мобильных устройствах -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -38,7 +39,7 @@
         </div>
     </nav>
 
-    <!-- Контент сайта -->
+    <!-- Контент -->
     <div class="container mt-4">
         <section id="home">
             <h2>Главная</h2>
@@ -47,17 +48,17 @@
 
         <section id="about">
             <h2>О нас</h2>
-            <p>Здесь информация о нашей компании...</p>
+            <p>Информация о нашей компании...</p>
         </section>
 
         <section id="koelnmesse">
             <h2>Koelnmesse</h2>
-            <p>Koelnmesse — крупнейшая выставочная компания в Германии...</p>
+            <p>Информация о выставке Koelnmesse...</p>
         </section>
 
         <section id="exhibitions">
             <h2>Выставки</h2>
-            <p>На нашем сайте вы найдете информацию о предстоящих выставках...</p>
+            <p>Информация о выставках...</p>
         </section>
 
         <section id="contact">
@@ -66,12 +67,10 @@
         </section>
     </div>
 
-    <!-- Подключение JavaScript для работы кнопки меню и других функций -->
+    <!-- Подключаем jQuery, Popper.js и Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Ваш кастомный скрипт, если нужно -->
-    <script src="script.js"></script>
 </body>
 </html>
