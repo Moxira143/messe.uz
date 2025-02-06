@@ -1,60 +1,26 @@
-/* Стиль для кнопки меню */
-.menu-btn {
-    font-size: 30px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+/* Для простого горизонтального меню */
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    color: white;
-    transform: translateX(-100%); /* Скрытое меню по умолчанию */
-    transition: transform 0.3s ease-in-out;
-    padding-top: 40px;
-}
-
-.sidebar.open {
-    transform: translateX(0); /* Меню появляется */
-}
-
-.sidebar ul {
+.nav-item {
     list-style: none;
-    padding: 0;
 }
 
-.sidebar ul li {
-    padding: 15px;
-    text-align: center;
-}
-
-.sidebar ul li a {
+.nav-link {
     text-decoration: none;
-    color: white;
-    display: block;
+    font-weight: bold;
+    color: #007bff;
+    padding: 10px 15px;
 }
 
-.sidebar ul li a:hover {
-    background-color: #444;
+.nav-link:hover {
+    color: #0056b3;
 }
 
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    color: white;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
+/* Дополнительные стили */
+body {
+    font-family: Arial, sans-serif;
 }
