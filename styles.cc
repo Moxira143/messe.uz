@@ -42,3 +42,17 @@ section {
 #contacts a {
     margin-right: 15px;
 }
+.social-icons {
+    display: flex;
+    gap: 10px; /* Отступы между иконками */
+}
+
+.social-icons img {
+    width: 40px; /* Размер иконок */
+    height: 40px;
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Эффект увеличения при наведении */
+}
