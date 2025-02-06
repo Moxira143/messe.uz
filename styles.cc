@@ -38,3 +38,8 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
