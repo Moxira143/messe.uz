@@ -56,3 +56,18 @@ section {
 .social-icons img:hover {
     transform: scale(1.2); /* Эффект увеличения при наведении */
 }
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a img {
+    width: 40px; /* Размер иконок */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2); /* Увеличение при наведении */
+}
