@@ -1,71 +1,100 @@
+м, [06.02.2025 15:17]
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Сайт</title>
-    <!-- Подключаем Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet"> <!-- Подключение стилей -->
+    <title>Koelnmesse Central Asia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Простое горизонтальное меню -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Мой Сайт</a>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#koelnmesse">Koelnmesse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#exhibitions">Выставки</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Контакты</a>
-                </li>
-            </ul>
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Koelnmesse Central Asia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#koelnmesse">Koelnmesse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exhibitions">Выставки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Контент -->
-    <div class="container mt-4">
-        <section id="home">
-            <h2>Главная</h2>
-            <p>Добро пожаловать на наш сайт!</p>
-        </section>
+    <!-- Главная страница -->
+    <section id="home" class="container mt-5">
+        <h1>Представительство Koelnmesse Central Asia</h1>
+        <p>Мы заряжаем твой бизнес.</p>
+    </section>
 
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Информация о нашей компании...</p>
-        </section>
+    <!-- О нас -->
+    <section id="about" class="container mt-5">
+        <h2>О нас</h2>
+        <p>ООО «Inter Dialog» - динамично развивающаяся компания, занимающая прочную позицию в организации деловых визитов...</p>
+        <h3>Направления нашей деятельности</h3>
+        <ul>
+            <li>Выставки и конгресс бизнес...</li>
+            <li>Организация торгово-экономических миссий...</li>
+            <li>Консалтинг и экспортно-импортные операции...</li>
+        </ul>
+    </section>
 
-        <section id="koelnmesse">
-            <h2>Koelnmesse</h2>
-            <p>Информация о выставке Koelnmesse...</p>
-        </section>
+    <!-- Koelnmesse -->
+    <section id="koelnmesse" class="container mt-5">
+        <h2>Koelnmesse</h2>
+        <p>Koelnmesse является одной из ведущих глобальных выставочных компаний...</p>
+    </section>
 
-        <section id="exhibitions">
-            <h2>Выставки</h2>
-            <p>Информация о выставках...</p>
-        </section>
+    <!-- Выставки -->
+    <section id="exhibitions" class="container mt-5">
+        <h2>Выставки</h2>
+        <ul>
+            <li><a href="https://www.anuga.com/" target="_blank">Anuga</a> — одна из крупнейших и важных в мире выставок продуктов питания и напитков.</li>
+            <li><a href="https://www.ism-cologne.com/" target="_blank">ISM + ProSweets Cologne</a> — крупнейшая выставка в отрасли производства сладостей.</li>
+            <li><a href="https://www.imm-cologne.com/" target="_blank">IMM Cologne</a> — выставка мебели и дизайна.</li>
+        </ul>
+    </section>
 
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Контактные данные...</p>
-        </section>
-    </div>
+    <!-- Контакты -->
+    <section id="contacts" class="container mt-5">
+        <h2>Контакты</h2>
+        <p>Телефоны: (+998) 95−143−59−23, (+998) 90−374−24−75</p>
+        <p>E-mail: koelnmesse@messe.uz, uz.interdialog@gmail.com</p>
+        <div>
+            <a href="https://t.me/interdialog" target="_blank">
+                <img src="telegram-icon.png" alt="Telegram" width="30">
+            </a>
+            <a href="https://www.facebook.com/koelnmesse.central.asia/" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://www.instagram.com/koelnmesse.central.asia" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" width="30">
+            </a>
+        </div>
+    </section>
 
-    <!-- Подключаем jQuery, Popper.js и Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.
 
+м, [06.02.2025 15:17]
+js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
