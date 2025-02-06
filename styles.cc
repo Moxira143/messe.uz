@@ -1,17 +1,3 @@
-/* Общие стили */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
 /* Стиль для меню */
 .menu-btn {
     font-size: 30px;
@@ -71,24 +57,4 @@ body {
     font-size: 30px;
     border: none;
     cursor: pointer;
-}
-
-/* Основной контент */
-main {
-    padding: 50px 20px;
-    margin-left: 250px;
-}
-
-h1 {
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
