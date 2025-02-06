@@ -1,4 +1,4 @@
-/* Стиль для меню */
+/* Стиль для кнопки меню */
 .menu-btn {
     font-size: 30px;
     background-color: #333;
@@ -19,13 +19,13 @@
     height: 100%;
     background-color: #333;
     color: white;
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Скрытое меню по умолчанию */
     transition: transform 0.3s ease-in-out;
     padding-top: 40px;
 }
 
 .sidebar.open {
-    transform: translateX(0);
+    transform: translateX(0); /* Меню появляется */
 }
 
 .sidebar ul {
