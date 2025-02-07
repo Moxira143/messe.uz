@@ -74,62 +74,49 @@
 
         /* Раздел контактов */
         .contacts {
-            padding: 50px 20px;
+            padding: 30px 5%;
             background: white; /* Белый фон для контраста */
             color: #666666; /* Фирменный серый цвет */
             font-family: "Helvetica", "Arial", sans-serif;
             font-size: 16px; /*Уменьшенный шрифт для контактов*/
+            text-align: center
         }
 
         .contacts h2 {
             font-size: 28px;
             margin-bottom: 20px;
         }
+/* Контейнер для контактов */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-/* Контактные данные в одну строку */
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;  /* Расстояние между группами контактов */
-      flex-wrap: wrap;
-    }
-    /* Группа телефонов */
-    .phones {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-    .phones p {
-      margin: 0;
-    }
-    /* Группа email и иконок соцсетей */
-    .emails-icons {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .emails-icons p {
-      margin: 0;
-    }
-    /* Иконки соцсетей */
-    .social-icons {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    .social-icons a {
-      display: inline-block;
-    }
-    .social-icons img {
-      width: 35px;
-      height: 35px;
-      transition: transform 0.3s ease;
-    }
-    .social-icons img:hover {
-      transform: scale(1.1);
-    }
+/* Контактные блоки */
+.contact-block {
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+/* Соцсети */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
   </style>
 </head>
 <body>
@@ -154,11 +141,15 @@
     <div class="hero"></div>
 
     <!-- Раздел контактов -->
-    <div class="contacts">
-        <h2>Контакты</h2>
+  <div class="contacts">
+  <h2>Контакты</h2>
+  <div class="contact-container">
+    <!-- Телефоны -->
+    <div class="contact-block">
         <p>📞 +998 95 143 59 23</p>
         <p>📞 +998 90 374 24 75</p>
         <p>📞 +998 90 345 44 34</p>
+        <div>
         <p>✉️ <a href="mailto:koelnmesse@messe.uz">koelnmesse@messe.uz</a></p>
         <p>✉️ <a href="mailto:uz.interdialog@gmail.com">uz.interdialog@gmail.com</a></p>
 
