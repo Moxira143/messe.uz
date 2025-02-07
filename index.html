@@ -6,35 +6,73 @@
     <title>Koelnmesse Central Asia</title>
     <style>
         /* Общие стили */
-        body {
-            background: #F8F8F8; /* Светло-серый фон */
-            color: #333; /* Темно-серый текст */
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
             text-align: center;
+        }
+
+        /* Фон с изображением */
+        .hero {
+            width: 100%;
+            height: 100vh; /* Высота на весь экран */
+            background: url('main-photo.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Затемнение для контраста */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Затемнение 50% */
+        }
+
+        /* Текст в центре */
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            font-size: 36px;
+            font-weight: bold;
         }
 
         /* Стили для навигационного меню */
         nav {
             background: #63A70A; /* Фирменный зеленый фон */
             padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            text-align: center;
         }
 
         nav ul li {
-            display: inline-block; /* Горизонтальное меню */
+            display: inline-block;
             margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: #F5F5F5; /* Светлый серый текст */
+            color: white;
             font-size: 18px;
             font-weight: bold;
             padding: 10px;
@@ -42,32 +80,7 @@
         }
 
         nav ul li a:hover {
-            color: #4D8508; /* Темно-зеленый при наведении */
-        }
-
-        /* Секция главного контента */
-        .main-container {
-            margin: 50px auto;
-            max-width: 800px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .main-container h1 {
-            font-size: 28px;
-            color: #63A70A; /* Зеленый заголовок */
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .main-container img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
+            color: #D4E157; /* Светло-зеленый при наведении */
         }
     </style>
 </head>
@@ -84,12 +97,11 @@
         </ul>
     </nav>
 
-    <!-- Основное содержание -->
-    <div class="main-container">
-        <h1>Представительство Koelnmesse Central Asia</h1>
-        <img src="images/main-photo.jpg" alt="Koelnmesse Central Asia">
+    <!-- Фон с изображением и текстом -->
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">Представительство Koelnmesse Central Asia</div>
     </div>
-
     </section>
     <!-- Контакты -->
     <section id="contacts" class="container mt-5">
