@@ -57,7 +57,8 @@
 
         /* Заголовок */
         .header {
-            margin-top: 100px; /* Отступ после меню */
+            margin-top: 100px; /* Отступ сверху после меню */
+            margin-bottom: 40px; /* БОЛЬШИЙ отступ от изображения */
             font-size: 42px; /* Крупный шрифт */
             font-weight: 500; /* Средняя жирность */
             color: #666666; /* Серый цвет Koelnmesse */
@@ -69,6 +70,44 @@
             width: 100%;
             height: 100vh;
             background: url('images/main-photo.jpg') no-repeat center center/cover;
+        }
+
+        /* Раздел контактов */
+        .contacts {
+            padding: 50px 20px;
+            background: white; /* Белый фон для контраста */
+            color: #666666; /* Фирменный серый цвет */
+            font-family: "Helvetica", "Arial", sans-serif;
+        }
+
+        .contacts h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contacts p {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        /* Стили для иконок соцсетей */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 40px; /* Размер иконок */
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1); /* Легкое увеличение при наведении */
         }
     </style>
 </head>
@@ -93,36 +132,31 @@
     <!-- Фон с изображением -->
     <div class="hero"></div>
 
-    </section>
-    <!-- Контакты -->
-    <section id="contacts" class="container mt-5">
+    <!-- Раздел контактов -->
+    <div class="contacts">
         <h2>Контакты</h2>
-<p>Телефоны: (+998)95 1435923, (+998)90 3742475, (+998)90 3454434.</p>
-<p>Email: <a href="mailto:koelnmesse@messe.uz">koelnmesse@messe.uz</a>, <a href="mailto:uz.interdialog@gmail.com">uz.interdialog@gmail.com</a></p>
-    
-</section>
-<!-- Иконки соцсетей -->
-<div class="social-icons">
-    <a href="https://t.me/interdialog" target="_blank">
-        <img src="images/telegram.png" alt="Telegram">
-    </a>
-    <a href="https://www.instagram.com/koelnmesse.central.asia" target="_blank">
-        <img src="images/instagram.png" alt="Instagram">
-    </a>
-    <a href="https://wa.me/998951435923" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp">
-    </a>
-    <a href="https://www.facebook.com/koelnmesse.central.asia/" target="_blank">
-        <img src="images/facebook.png" alt="Facebook">
-    </a>
-</di
+        <p>📞 +998 95 143 59 23</p>
+        <p>📞 +998 90 374 24 75</p>
+        <p>📞 +998 90 345 44 34</p>
+        <p>✉️ <a href="mailto:koelnmesse@messe.uz">koelnmesse@messe.uz</a></p>
+        <p>✉️ <a href="mailto:uz.interdialog@gmail.com">uz.interdialog@gmail.com</a></p>
+
+        <!-- Соцсети -->
+        <div class="social-icons">
+            <a href="https://t.me/interdialog" target="_blank">
+                <img src="images/telegram.png" alt="Telegram">
+            </a>
+            <a href="https://www.instagram.com/koelnmesse.central.asia" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/998951435923" target="_blank">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.facebook.com/koelnmesse.central.asia/" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
         </div>
-    </section>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.
-
-м, [06.02.2025 15:17]
-js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
