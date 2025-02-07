@@ -23,29 +23,29 @@ nav {
 }
 nav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+  display: inline;
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #666666; /* Серый цвет логотипа */
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   padding: 10px;
   transition: color 0.3s ease;
 }
 nav ul li a:hover {
-  color: #D4E157;
+  color: white;
 }
 
 /* Заголовок */
 .header {
-  margin-top: 100px;  /* Отступ после меню */
+  margin-top: 120px;  /* Увеличенный отступ от меню */
   margin-bottom: 40px; /* Отступ от изображения */
   font-size: 42px;
   font-weight: 500;
