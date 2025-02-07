@@ -78,38 +78,59 @@
             background: white; /* Белый фон для контраста */
             color: #666666; /* Фирменный серый цвет */
             font-family: "Helvetica", "Arial", sans-serif;
+            font-size: 16px; /*Уменьшенный шрифт для контактов*/
         }
 
         .contacts h2 {
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 20px;
         }
 
-        .contacts p {
-            font-size: 20px;
-            margin: 5px 0;
-        }
-
-        /* Стили для иконок соцсетей */
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            display: inline-block;
-        }
-
-        .social-icons img {
-            width: 40px; /* Размер иконок */
-            height: 40px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.1); /* Легкое увеличение при наведении */
-        }
-    </style>
+/* Контактные данные в одну строку */
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;  /* Расстояние между группами контактов */
+      flex-wrap: wrap;
+    }
+    /* Группа телефонов */
+    .phones {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .phones p {
+      margin: 0;
+    }
+    /* Группа email и иконок соцсетей */
+    .emails-icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .emails-icons p {
+      margin: 0;
+    }
+    /* Иконки соцсетей */
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .social-icons a {
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      transition: transform 0.3s ease;
+    }
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
 
