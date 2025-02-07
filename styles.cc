@@ -1,73 +1,110 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background: #F8F8F8;
+  color: #333;
+  text-align: center;
 }
 
-h1, h2, h3 {
-    color: #333;
+/* Навигационное меню */
+nav {
+  background: #63A70A; /* Фирменный зеленый */
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #D4E157;
 }
 
-ul {
-    list-style-type: none;
+/* Заголовок */
+.header {
+  margin-top: 100px;  /* Отступ после меню */
+  margin-bottom: 40px; /* Отступ от изображения */
+  font-size: 42px;
+  font-weight: 500;
+  color: #666666;  /* Фирменный серый */
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
-ul li {
-    margin: 10px 0;
+/* Фоновое изображение (hero) */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url('images/main-photo.jpg') no-repeat center center/cover;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #007bff;
+/* Раздел контактов */
+.contacts {
+  padding: 30px 5%;
+  background: white;
+  color: #666666;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+.contacts h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-section {
-    padding: 20px 0;
+/* Контейнер для контактов */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-#home {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 50px 0;
+/* Контактные блоки */
+.contact-block {
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
 }
 
-#about, #koelnmesse, #exhibitions, #contacts {
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    padding: 20px;
-}
-
-#contacts a {
-    margin-right: 15px;
-}
+/* Соцсети */
 .social-icons {
-    display: flex;
-    gap: 10px; /* Отступы между иконками */
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 .social-icons img {
-    width: 40px; /* Размер иконок */
-    height: 40px;
-    transition: transform 0.3s ease; /* Плавное увеличение */
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.2); /* Эффект увеличения при наведении */
-}
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.social-links a img {
-    width: 40px; /* Размер иконок */
-    height: 40px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.social-links a img:hover {
-    transform: scale(1.2); /* Увеличение при наведении */
+  transform: scale(1.1);
 }
