@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif; /* Шрифт из логотипа */
   background: #F8F8F8;
-  color: #333;
+  color: #666666; /* Серый цвет из логотипа */
   text-align: center;
 }
 
@@ -53,11 +53,12 @@ nav ul li a:hover {
   font-family: "Helvetica", "Arial", sans-serif;
 }
 
-/* Фоновое изображение (hero) */
-.hero {
+/* Основное изображение */
+.hero img {
   width: 100%;
-  height: 100vh;
-  background: url('images/main-photo.jpg') no-repeat center center/cover;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Раздел контактов */
